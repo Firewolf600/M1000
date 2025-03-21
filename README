@@ -1,0 +1,75 @@
+HELLO! [ M1000 | VER 1.0.0]
+This is the first RAG ai i ever made where i convert the extracted data into chunks that overlap for better retrieval 
+check the flowchart for refference
+
+the comments on the code should make it obvious , if not feel free to contact me! via discord or email.
+
+i feel like this kind of approach for rag has some serious advantages and i will work on making it better 
+untill it becomes insanely efficient.
+
+**ABOUT RAG PIPELINES**
+
+ -USAGE PERKS-
+
+rag pipelines are a basically just text or data you want to retrieve from a closed source (textbook,or any book, or any material with closed data) closed data as in data private to you or to limit ai responses so it only gives you what you want and nothing more from the internet.
+
+Since this is a student study focused model i will be taking example of something a student can relate...
+Lets say you are studying for an exam and u have a 500 page textbook and u want information on a certain topic
+you could go online and ask chat gpt to give you  info on the topic
+However it may either give u a simplified explanation or add extra details which is not there in your textbook
+this leads to a waste of time in some cases.
+
+using rag on a local LLM  helps in 2 things ,  one it can run without internet so you can run it as long as you
+have a lap/pc with you  and it can be run on super low end devices too , personally ran it on a device with 
+4gb ram and a LLM with low parameters, in rag we do not necessarly need a model with high parameters anything <3b is going to work , 
+am currently using 
+
+===========================================
+tinyllama:latest    2644915ede35    637 MB
+smollm:1.7b         95f6557a0f0f    990 MB
+==========================================
+
+yet to test it with smollm but yes tinyllama works great too
+and this can be run on low end devices as ur just asking the ai to retrieve the data instead of training it which takes
+a lot of computing power
+
+As long as u can run the LLM doing RAG with it is going to work as well
+for low end devics responces may take upto 5min to generate initially (including chunking) then it can get reduced down to 3.5 min on avg (on a 4gb i3 lap) so yes the  output generation speed is directly propotional to your machienes computing strength
+reffer to ollamas guide for LLM selection and more info on system requirements and how it works
+(ollama provides you with free opensource LLMs)
+
+https://ollama.com get all the information you want here , you can navigate to their library from here too
+
+https://ollama.download (must download client side to use , download via terminal/cmd ) 
+
+
+
+**HOW TO USE M1000** GETTING STARTED \ HOW TO 
+
+replace your_data.text with your data preferably a pdf file [ READ your_data.text for more info on this]
+
+V. IMPORTANT - DELETE CHROMA DB WITH THIS FILE ITS PURELY USED AS AN EXAMPLE OF THE FILES WHICH WOULD SHOW UP, WITHOUT IT BEING DELETE UR FILE WILL BE CONFLICTED AS CHROMA DB IS CREATED WHEN U RUN TH CODE
+
+IMPORTANT -  DONT FORGET TO MAKE A MODEL FROM ANOTHER MODEL BEFORE RUNNING , "model1" IS A CLONE OF TINYLLAMA WITH A DIFFERENT NAME , MUST CONTAIN ONLY IMPORT STATEMENTS
+
+IMPORTANT - DO NOT FORGET TO CHANGE FILE NAME IN ragpipline.py AND SIMILAR STUFF
+
+
+CONTACT ME IF YOU HAVE ANY DOUBGHTS VIA DISCORD ILL BE ONLINE THERE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

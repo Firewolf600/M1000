@@ -1,0 +1,9 @@
+Put ur custom data here
+my data was in the .pdf format , what i tried the rag with was a physics text book ,
+the data can be of any data type , just remember to let ur code exract the words so that it can be converted to
+chunks and then stored into the vector db.
+so yes this can be a database or a wordfile or anything u like just improvise accordingly
+
+
+
+
